@@ -1,0 +1,36 @@
+---
+import { FaUpload, FaCode, FaDownload } from 'react-icons/fa';
+
+const steps = [
+  {
+    icon: FaUpload,
+    title: 'Upload Your Data',
+    description: 'Easily upload your structured data files (CSV, JSON) or connect to your database.'
+  },
+  {
+    icon: FaCode,
+    title: 'Integrate with Our API',
+    description: 'Use our developer-friendly API to anonymize data directly within your applications and workflows.'
+  },
+  {
+    icon: FaDownload,
+    title: 'Download Anonymized Data',
+    description: 'Download your anonymized data, preserving referential integrity and data utility.'
+  }
+];
+---
+
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-serif font-bold text-center mb-16">How Null-ID Works</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {steps.map((step) => (
+        <div class="bg-gray-50 p-8 rounded-lg text-center"> 
+          <step.icon className="w-16 h-16 mx-auto mb-6 text-blue-700" />
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">{step.title}</h3>
+          <p class="text-gray-700">{step.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

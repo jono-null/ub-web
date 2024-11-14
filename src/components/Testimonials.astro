@@ -1,0 +1,38 @@
+---
+const motivations = [
+  {
+    title: "Protecting Sensitive Information",
+    description: "We are driven by a deep commitment to safeguarding sensitive data and ensuring individual privacy."
+  },
+  {
+    title: "Empowering Innovation",
+    description: "We believe in unlocking the power of data to drive innovation and progress while maintaining ethical standards."
+  },
+  {
+    title: "Building Trust and Transparency",
+    description: "We strive to build trust with our users by being transparent about our data practices and prioritizing data security."
+  },
+];
+---
+
+<section class="bg-gray-100 py-20">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-serif font-bold text-center mb-12">
+      What Motivates Us
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {
+        motivations.map((motivation) => (
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">
+              {motivation.title}
+            </h3>
+            <p class="text-gray-700">
+              {motivation.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

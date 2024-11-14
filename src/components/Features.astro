@@ -1,0 +1,59 @@
+---
+import { FaLock, FaCogs, FaUsers, FaDatabase, FaCheckCircle } from 'react-icons/fa'; 
+
+const features = [
+  { 
+    icon: FaLock, 
+    title: 'Robust Anonymization',
+    description: 'Protect sensitive data with advanced anonymization techniques powered by Microsoft Presidio.' 
+  },
+  { 
+    icon: FaCogs, 
+    title: 'Highly Configurable',
+    description: 'Customize anonymization to meet your specific needs and data requirements.' 
+  },
+  { 
+    icon: FaUsers, 
+    title: 'Developer-Friendly API',
+    description: 'Seamlessly integrate anonymization into your workflows and applications.' 
+  },
+  { 
+    icon: FaDatabase, 
+    title: 'Maintain Data Integrity',
+    description: 'Preserve data relationships and structure with referential integrity.' 
+  },
+  { 
+    icon: FaCheckCircle, 
+    title: 'Secure and Compliant',
+    description: 'Ensure data privacy and comply with regulations like GDPR, CCPA, and more.' 
+  },
+];
+---
+<section class="bg-blue-700 py-20 text-white text-center">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-serif font-bold mb-4">Key Features of Null-ID</h2>
+    <p class="text-xl mb-12 max-w-2xl mx-auto">
+      Null-ID empowers developers and organizations to protect sensitive data while maintaining data utility and integrity.
+    </p>
+
+    <div class="bg-white text-blue-700 rounded-lg shadow-lg p-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        {features.map((feature) => ( 
+          <div class="flex flex-col items-center"> 
+            <feature.icon className="w-16 h-16 mb-4" />
+            <p class="text-sm font-semibold mb-2">{feature.title}</p>
+            <p class="text-xs text-gray-600">{feature.description}</p> 
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <p class="text-xl mt-12 mb-8 max-w-2xl mx-auto">
+      Built for scalability and ease of use, Null-ID seamlessly integrates into your existing workflows and CI/CD pipelines.
+    </p>
+
+    <a href="/null-id" class="inline-block bg-white text-blue-700 font-bold py-3 px-8 rounded-full hover:bg-blue-100 transition duration-300">
+      Learn More About Null-ID
+    </a> 
+  </div>
+</section>

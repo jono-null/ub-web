@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets';
+import awsLogo from '../assets/logos/aws.png'; // Make sure to have the AWS logo in your assets
+
+---
+
+<section class="bg-white py-20">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-serif font-bold text-center mb-12">
+      Built on the Reliable Infrastructure of AWS
+    </h2>
+    <div class="flex flex-col items-center justify-center"> 
+      <div class="flex items-center justify-center">
+        <Image 
+          src={awsLogo} 
+          alt="Amazon Web Services" 
+          class="rounded-lg" 
+          width={256} 
+          height={128} 
+        />
+      </div>
+      <p class="text-center text-gray-700 mt-4">
+        Leveraging the scalability, security, and performance of AWS to deliver a seamless and reliable anonymization experience.
+      </p>
+    </div>
+  </div>
+</section>

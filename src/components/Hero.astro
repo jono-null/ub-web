@@ -1,0 +1,38 @@
+---
+import { Image } from 'astro:assets';
+import dataPipelineImg from '../assets/data-pipeline.png'; 
+---
+
+<section class="bg-white py-20">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col lg:flex-row items-center">
+      <div class="lg:w-1/2 lg:pr-12">
+        <h1 class="text-5xl lg:text-6xl font-serif font-bold text-gray-900 mb-6">
+          Anonymize Data. <br> Empower Innovation. 
+        </h1>
+        <p class="text-xl text-gray-700 mb-8">
+          Urlbound builds advanced anonymization solutions that empower businesses to leverage their data to its full potential without compromising security or compliance.
+        </p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
+          Learn More
+        </button> 
+      </div>
+      <div class="lg:w-1/2 mt-10 lg:mt-0 relative">
+        <Image 
+          src={dataPipelineImg} 
+          alt="Data Anonymization" 
+          class="rounded-lg shadow-xl"
+          width={600}
+          height={400}
+        />
+        
+        <Image 
+          src={dataPipelineImg} 
+          alt="Data flowing through a secure pipeline" 
+          class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition duration-300 hidden"
+          id="stillImage"
+        /> 
+      </div>
+    </div>
+  </div>
+</section>

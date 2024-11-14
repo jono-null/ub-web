@@ -1,0 +1,28 @@
+---
+import { Image } from 'astro:assets';
+import aiTrainingImage from '../assets/ai-training.png'; // Replace with a relevant image
+---
+
+<section class="bg-white py-20">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+      <div class="md:w-1/2">
+        <Image 
+          src={aiTrainingImage} 
+          alt="Visual representation of AI training with anonymized data" 
+          class="rounded-lg shadow-xl w-full"
+          width={600}
+          height={400}
+        />
+      </div>
+      <div class="md:w-1/2">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
+          Unlock the Power of AI with Anonymized Data
+        </h2>
+        <p class="text-xl text-gray-700">
+          Null-ID enables the ethical and responsible use of sensitive data for AI training. Anonymize your datasets while preserving crucial information and relationships, leading to more accurate and unbiased AI models without compromising data privacy.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
